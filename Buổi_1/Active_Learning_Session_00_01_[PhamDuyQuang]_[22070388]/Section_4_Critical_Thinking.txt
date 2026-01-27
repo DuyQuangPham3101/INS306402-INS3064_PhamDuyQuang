@@ -1,0 +1,49 @@
+===========================================================
+INS3064 - PRACTICAL TASK: SECTION 4
+CRITICAL THINKING QUESTION
+===========================================================
+
+QUESTION:
+Explain why login functionality MUST be implemented using PHP (server-side) 
+rather than JavaScript (client-side). Identify at least three specific 
+security risks.
+
+ANSWER:
+Implementing a login system requires a high level of security that only 
+server-side processing can provide. The fundamental reason is that 
+PHP (server-side) executes on the web server, keeping the logic and 
+sensitive data hidden from the user, whereas JavaScript (client-side) 
+runs directly on the user's browser, making it completely transparent 
+and modifiable.
+
+SPECIFIC SECURITY RISKS OF USING JAVASCRIPT FOR LOGIN:
+
+1. Source Code Exposure: 
+   Since JavaScript is sent to the client's browser, any user can easily 
+   view the authentication logic or hardcoded credentials by using 
+   "View Page Source" or Developer Tools (F12).
+
+2. Authentication Bypass: 
+   A malicious user can modify the JavaScript code locally in their 
+   browser. For example, they could change a conditional check like 
+   'if (isValidUser)' to always be 'true', allowing them to bypass 
+   the password verification entirely.
+
+3. Database Credential Leakage: 
+   To verify credentials via client-side JavaScript, the application 
+   would need to expose database connection strings or API keys to 
+   the browser, giving attackers direct access to the entire 
+   database.
+
+4. Insecure Data Handling: 
+   Using client-side logic requires bringing sensitive user data 
+   (like hashed passwords for comparison) into the browser's memory, 
+   where it is vulnerable to memory-scraping malware or 
+   unauthorized access.
+
+CONCLUSION:
+Server-side processing is essential for protecting sensitive data 
+because it acts as a "black box" where credentials can be safely 
+verified against a database without exposing the underlying 
+security mechanisms to the end-user.
+

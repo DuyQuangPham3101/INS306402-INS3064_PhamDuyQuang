@@ -1,0 +1,64 @@
+===========================================================
+PHIẾU HỌC TẬP BUỔI 01
+LỚP INS3064-INS306402
+Họ tên: Phạm Duy Quang
+MSSV: 22070388
+===========================================================
+
+PHẦN A: TỔNG HỢP KIẾN THỨC
+
+A1. CÁC KHÁI NIỆM CHÍNH
+-----------------------------------------------------------
+1. PHP: Là ngôn ngữ kịch bản phía máy chủ (Server-side) dùng để 
+   tạo các trang web động và tương tác với cơ sở dữ liệu.
+   Ví dụ: Xử lý form đăng ký thành viên.
+
+2. echo: Là một câu lệnh trong PHP dùng để xuất dữ liệu (văn bản, 
+   biến) ra màn hình trình duyệt.
+   Ví dụ: echo "Chào mừng bạn!";
+
+3. Server-side: Là các tác vụ xử lý diễn ra trên máy chủ web trước 
+   khi gửi kết quả HTML cuối cùng đến trình duyệt của người dùng.
+   Ví dụ: Kiểm tra mật khẩu trong cơ sở dữ liệu ngân hàng.
+
+A2. CÂU HỎI TRẮC NGHIỆM
+-----------------------------------------------------------
+1. PHP là viết tắt của?
+   Đáp án: B) PHP: Hypertext Preprocessor
+
+2. Thẻ mở PHP đúng là?
+   Đáp án: B) <?php
+
+3. Câu lệnh PHP kết thúc bằng?
+   Đáp án: C) Dấu chấm phẩy (;)
+
+A3. CÂU HỎI TỰ LUẬN
+-----------------------------------------------------------
+1. Giải thích quy trình từ khi user nhập URL đến khi trang web hiển thị:
+   - Bước 1: User nhập URL, trình duyệt gửi yêu cầu (Request) đến máy chủ.
+   - Bước 2: Máy chủ nhận yêu cầu, tìm file .php tương ứng.
+   - Bước 3: Trình thông dịch PHP trên máy chủ thực thi mã code.
+   - Bước 4: Máy chủ gửi kết quả đã chuyển thành mã HTML về trình duyệt.
+   - Bước 5: Trình duyệt nhận HTML và hiển thị giao diện cho người dùng.
+
+2. Tại sao nên sử dụng echo thay vì print?
+   - echo có tốc độ thực thi nhanh hơn một chút so với print.
+   - echo có thể nhận nhiều tham số (ví dụ: echo "A", "B"), trong khi 
+     print chỉ nhận một tham số duy nhất.
+
+-----------------------------------------------------------
+PHẦN B: BÀI TẬP LÝ THUYẾT
+
+BÀI TẬP 1: SỬA LỖI CODE
+Đoạn code gốc có 3 lỗi chính:
+1. Thiếu dấu chấm phẩy (;) ở dòng echo đầu tiên.
+2. print không thể nhận nhiều tham số ngăn cách bởi dấu phẩy.
+3. Cú pháp in văn bản và biến cần được chuẩn hóa.
+
+ĐOẠN CODE ĐÃ SỬA:
+<?php
+  echo "Hello World"; // Lỗi 1: Thêm dấu ;
+  echo "Welcome to PHP!";
+  echo "This is ", "PHP"; // Lỗi 2: Dùng echo thay print để in nhiều tham số
+?>
+===========================================================

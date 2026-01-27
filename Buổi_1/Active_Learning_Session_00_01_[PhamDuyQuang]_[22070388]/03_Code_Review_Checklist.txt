@@ -1,0 +1,20 @@
+CODE REVIEW CHECKLIST - INS3064
+Sinh viên: Phạm Duy Quang
+Mã sinh viên: 22070388
+
+STT | Tiêu chí kiểm tra                          | Điểm tối đa | Điểm tự chấm
+----|---------------------------------------------|-------------|-------------
+1   | File có đuôi .php và lưu đúng vị trí        | 2           | 2
+2   | Có thẻ mở PHP (<?php)                       | 2           | 2
+3   | Có thẻ đóng PHP (?>)                        | 2           | 2
+4   | Đã gán biến cho name,studentId,class,email  | 3           | 3
+5   | Có ít nhất 4 lệnh echo hiển thị biến        | 3           | 3
+6   | Sử dụng hàm date() hiển thị ngày            | 2           | 2
+7   | Sử dụng hàm date() hiển thị giờ             | 2           | 2
+8   | Có ít nhất 1 dòng chú thích (// hoặc /* */) | 2           | 2
+9   | Tất cả các câu lệnh kết thúc bằng dấu ;     | 3           | 3
+10  | Code dễ đọc, thụt lề (indentation) chuẩn    | 2           | 2
+11  | Không có lỗi PHP khi chạy trên trình duyệt  | 3           | 3
+12  | Giao diện hiển thị chuyên nghiệp, đẹp mắt   | 3           | 3
+----|---------------------------------------------|-------------|-------------
+    | TỔNG ĐIỂM                                   | 30          | 30
